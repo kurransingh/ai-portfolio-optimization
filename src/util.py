@@ -1,4 +1,5 @@
 import random
+import math
 
 
 class Counter(dict):
@@ -218,3 +219,7 @@ class Counter(dict):
 def flip_coin(p):
     r = random.random()
     return r < p
+
+
+def sigmoid(x):
+    return 1 / (1 + math.exp(-x))
